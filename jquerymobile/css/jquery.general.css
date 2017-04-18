@@ -1,0 +1,67 @@
+
+/* General classes to make fixed size controls */
+
+html{
+    height:100%;
+}
+
+table, tr, td{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border:none;
+}
+
+.border-box, .border-box-child .ui-btn-inner {
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+        -ms-box-sizing: border-box !important;  
+            box-sizing: border-box !important;
+}
+
+
+.no-margin {  
+    margin: 0 !important;
+}
+
+/* pages with templates should print margins */
+.inline > .no-margin{  
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.expanded, .expanded-child .ui-btn-inner {
+    display: block;
+    height: 100%;
+    white-space: normal;
+}
+
+.expanded .centered, .expanded-centered-child .ui-btn-text{ 
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -0.6em !important;
+}
+
+
+/* MMap */
+
+.ui-map{
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+}
+
+.ui-map-border > .ui-map {
+    margin: 1em;
+}
+.ui-map-wrap{
+   position: relative;
+   margin: .5em 0;
+}
+/*fix because in the new update JQDateM 1.3.0 doesn't rende correctly in the "useInline" true*/
+.ui-datebox-container .ui-input-text{
+    margin: .5em 0 !important;
+}
