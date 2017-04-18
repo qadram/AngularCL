@@ -1,0 +1,2 @@
+# AngularCL
+Angular Class Library
